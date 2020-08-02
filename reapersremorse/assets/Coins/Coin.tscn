@@ -24,7 +24,7 @@ tracks/0/keys = {
 }
 
 [node name="Coin" type="Area2D"]
-collision_layer = 0
+collision_layer = 8
 script = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -33,6 +33,7 @@ shape = SubResource( 1 )
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = ExtResource( 1 )
 animation = "Coin_Animation"
+frame = 2
 playing = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]

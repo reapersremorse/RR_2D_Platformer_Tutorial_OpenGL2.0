@@ -28,9 +28,6 @@ func _physics_process(delta): #this runs 60 tps because of delta
 	#Jump
 	if Input.is_action_just_pressed("Movement_Up-Jump") and is_on_floor():
 		velocity.y = PlayerJumpVelocity
-	
-		
-		
 	velocity.y = velocity.y + PlayerGravity
 	
 	velocity = move_and_slide(velocity,Vector2.UP)
